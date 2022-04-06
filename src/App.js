@@ -72,9 +72,9 @@ function App() {
         {/* <div  className="w-1/2 h-20 bg-black"></div> */}
     </div>
 
-    {/* <div className="flex items-center justify-center w-full h-20 my-24 ">
-      <Test />
-    </div> */}
+    <div className="flex items-center justify-center w-full h-20 my-24 ">
+      <Test1 />
+    </div>
 
     <div className="flex items-center justify-center w-full h-20 mb-56">
       <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
@@ -105,3 +105,15 @@ function Test () {
 // App.PropTypes = {
 //   title: PropTypes.string.isRequired
 // }
+
+function Test1 () {
+  return (
+
+    <div className="flex flex-col rounded-xl bg-gray-100 shadow-xl shadow-purple-500/100 min-w-[50%] max-w-full "> {/*style={{ backgroundColor:"rgb(40,44,52)"}}*/}
+      <div className="flex flex-col justify-start items-center text-gray-600 mx-5 mb-3 p-10 text-3xl">
+          <h1>This is a Heading</h1>
+          <p>This is a paragraph.</p>
+      </div>  
+    </div>
+  )
+}
