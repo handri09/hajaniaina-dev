@@ -1,5 +1,6 @@
 import "./App.css"
 import React from 'react'
+import PropTypes from 'prop-types'
 import {Editor, High, Dropdown, Highs} from './pages'
 import fb from "./assets/fb.png"
 
@@ -56,7 +57,7 @@ function App() {
               <div className="rounded-full bg-yellow-400 h-5 w-5"></div>
               <div className="rounded-full bg-green-400 h-5 w-5"></div>
             </div>
-            {/* <div className="flex w-full justify-center text-white font-bold font-mono mr-20">{title}</div> */}
+            <div className="flex w-full justify-center text-white font-bold font-mono mr-20">{title}</div>
           </div>
           {/* <h1 className="text-white text-6xl text-center font-extrabold font-mono px-20 py-5 ">FrontEnd Dev</h1> */}
           {/* <div className="text-white text-4xl font-extralight text-center font-mono p-2"><em><p className="text-purple-200">frontEnd</p></em></div> */}
@@ -70,7 +71,12 @@ function App() {
         </div>
         {/* <div  className="w-1/2 h-20 bg-black"></div> */}
     </div>
-    <div className="flex items-center justify-center w-full h-20 mb-20">
+
+    {/* <div className="flex items-center justify-center w-full h-20 my-24 ">
+      <Test />
+    </div> */}
+
+    <div className="flex items-center justify-center w-full h-20 mb-56">
       <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
     </div>
 
@@ -80,10 +86,22 @@ function App() {
 
 export default App;
 
+function Test () {
+  return (
 
+    <div className="flex flex-col rounded-xl bg-gray-100 shadow-xl shadow-purple-500/100 min-w-[50%] max-w-full "> {/*style={{ backgroundColor:"rgb(40,44,52)"}}*/}
 
-// const fruits = ['Paoma🍎', 'Voasary🍊', 'Akondro🍌']
+      <div className="flex justify-start items-center text-gray-600 mx-5 mb-3 p-10 text-3xl">
+        <div className="flex flex-col">
+          <p className="m-1 font-mono font-bold"><abbr title="HyperText Markup Language">HTML</abbr>, Milay ah 👨‍💻!!</p>
+          <p className="mt-3 ml-20 flex justify-center items-center bg-gray-500 text-gray-50 px-1 text-lg border-2 border-gray-400 font-mono">HyperText Markup Language</p>
+        </div>
+      </div>  
 
-// console.log(fruits.at(0)) // Paoma🍎
-// console.log(fruits.at(-1)) // Akondro🍌
+    </div>
+  )
+}
 
+// App.PropTypes = {
+//   title: PropTypes.string.isRequired
+// }
