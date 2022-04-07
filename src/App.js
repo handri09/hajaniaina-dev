@@ -56,7 +56,7 @@ function App() {
               <div className="rounded-full bg-yellow-400 h-5 w-5"></div>
               <div className="rounded-full bg-green-400 h-5 w-5"></div>
             </div>
-            {/* <div className="flex w-full justify-center text-white font-bold font-mono mr-20">{title}</div> */}
+            <div className="flex w-full justify-center text-white font-bold font-mono mr-20">{title}</div>
           </div>
           {/* <h1 className="text-white text-6xl text-center font-extrabold font-mono px-20 py-5 ">FrontEnd Dev</h1> */}
           {/* <div className="text-white text-4xl font-extralight text-center font-mono p-2"><em><p className="text-purple-200">frontEnd</p></em></div> */}
@@ -79,11 +79,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// const fruits = ['Paoma🍎', 'Voasary🍊', 'Akondro🍌']
-
-// console.log(fruits.at(0)) // Paoma🍎
-// console.log(fruits.at(-1)) // Akondro🍌
-
