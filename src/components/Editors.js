@@ -17,7 +17,9 @@ function Editors() {
   return (
     <div className="App">
 
-      Title: <input onChange={(e) => setTitle(e.target.value)} className="m-5"/>
+      <label for='title'>Title: 
+        <input id='title' onChange={(e) => setTitle(e.target.value)} className="m-5"/>
+      </label>
 
       <div className="ControlsBox">
         <Dropdown
