@@ -72,7 +72,11 @@ function Editors() {
       <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
     </div>
 
+    <div className={`w-full h-20 bg-white rounded-lg text-2xl flex justify-center`}>
+      test
     </div>
+
+  </div>
   );
 }
 
