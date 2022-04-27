@@ -33,6 +33,7 @@ function Editors() {
           data={themes}
         />
       </div>
+
       <div className="PanelsBox">
         <Editor
           placeHolder="Type your code here..."
@@ -48,7 +49,6 @@ function Editors() {
       </div>
 
       <div className="flex justify-center gap-10 text-2xl font-mono my-10 border-green-600">
-        <div ></div>
         <div className="flex flex-col rounded-xl bg-gray-800 shadow-xl shadow-purple-500/100 min-w-[50%] max-w-full " style={{ backgroundColor:"rgb(40,44,52)"}}>
           {/** Button */}       
           <div className="flex items-center h-10 mx-2 gap-2 px-5 mt-2">
@@ -59,9 +59,7 @@ function Editors() {
             </div>
             <div className="flex w-full justify-center text-white font-bold font-mono mr-20">{title}</div>
           </div>
-          {/* <h1 className="text-white text-6xl text-center font-extrabold font-mono px-20 py-5 ">FrontEnd Dev</h1> */}
-          {/* <div className="text-white text-4xl font-extralight text-center font-mono p-2"><em><p className="text-purple-200">frontEnd</p></em></div> */}
-          {/** CODE */}
+
           <div className="text-white mx-5 mb-3">
             <Highs language={language} theme={themes["atomOneDarkReasonable"]}>
               {input}
@@ -69,7 +67,6 @@ function Editors() {
             {/* {`const fruits = ['Paoma🍎', 'Voasary🍊', 'Akondro🍌']`}  */}
           </div>      
         </div>
-        {/* <div  className="w-1/2 h-20 bg-black"></div> */}
     </div>
     <div className="flex items-center justify-center w-full h-20 mb-20">
       <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
