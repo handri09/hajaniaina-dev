@@ -1,6 +1,7 @@
+import './Editors.css'
 import React from 'react'
-import {Editor, High, Dropdown, Highs} from '../pages'
-import fb from "../assets/fb.png"
+import {Editor, High, Dropdown, Highs} from '../../pages'
+import fb from "../../assets/fb.png"
 
 import * as themes from "react-syntax-highlighter/dist/esm/styles/hljs";
 import * as languages from "react-syntax-highlighter/dist/esm/languages/hljs";
@@ -15,8 +16,7 @@ function Editors() {
   const [title, setTitle] = React.useState("index.js")
 
   return (
-    <div className="App">
-
+    <>
       <label for='title'>Title: 
         <input id='title' onChange={(e) => setTitle(e.target.value)} className="m-5"/>
       </label>
@@ -76,7 +76,7 @@ function Editors() {
       test
     </div>
 
-  </div>
+    </>
   );
 }
 
