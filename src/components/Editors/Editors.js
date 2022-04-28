@@ -51,7 +51,7 @@ function Editors() {
     </div>
 
 
-    <div className={`w-full h-screen `}>
+    <div className={` flex flex-col justify-end w-full h-screen pb-20`}>
       <div className="flex justify-center gap-10 text-2xl font-mono my-10 border-green-600">
           <div className="flex flex-col rounded-xl bg-gray-800 shadow-xl shadow-purple-500/100 min-w-[50%] max-w-full " style={{ backgroundColor:"rgb(40,44,52)"}}>
             {/** Button */}       
