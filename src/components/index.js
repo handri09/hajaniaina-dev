@@ -1,3 +1,4 @@
-import Editors from './Editors/Editors'
+import Editors from './Editors/Editors';
+import NavBar from './NavBar';
 
-export {Editors}
+export { Editors, NavBar };
