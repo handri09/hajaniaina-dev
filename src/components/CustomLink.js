@@ -15,11 +15,11 @@ function CustomLink({ children, to, ...props }, ref) {
               px-2 md:px-1 py-2 lg:px-4 xl:px-6
               mt-2 md:mt-0 md:ml-4 
               bg-transparent 
-              hover:text-green-600 hover:border-b-green-600 hover:border-b 
-              focus:text-green-600 focus:border-b-green-600 focus:border-b 
+              hover:text-violet-700 hover:border-b-violet-700 hover:border-b 
+              focus:text-violet-700 focus:border-b-violet-700 focus:border-b 
               ${
                 match
-                  ? 'text-green-600 border-b-green-600 border-b font-bold'
+                  ? 'text-violet-700 border-b-violet-700 border-b font-bold'
                   : ''
               }`}
         to={to}
