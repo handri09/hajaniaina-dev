@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'
 function NavBar() {
   return (
     <>
-      {/* <div className={`w-full shadow-md bg-white sticky top-0`}>
+      <div className={`w-full shadow-md bg-white sticky top-0`}>
         <div className='w-full max-w-screen-2xl mx-auto flex justify-center items-center px-5'>
           <div className="w-full flex p-1 h-full items-center">
             <img src={logo} alt='logo' className='px-3 h-14'/>
@@ -18,7 +18,7 @@ function NavBar() {
             <CustomLink to='classroom/'>Classroom</CustomLink>
           </div>
         </div>
-      </div> */}
+      </div>
       <Outlet />
     </>
   )
