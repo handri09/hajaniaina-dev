@@ -1,9 +1,7 @@
 import './Editors.css'
 import React from 'react'
 import {Editor, High, Dropdown, Highs} from '../../pages'
-import fb from "../../assets/fb.png"
-import video from '../../assets/On Me - Ed Sheeran.mp4';
-import audio from '../../assets/Toa Anao - Poopy.mp3';
+import fb from "../../assets/fb.png";
 
 import * as themes from "react-syntax-highlighter/dist/esm/styles/hljs";
 import * as languages from "react-syntax-highlighter/dist/esm/languages/hljs";
@@ -81,7 +79,22 @@ function Editors() {
     </div>
 
     <div className='w-full flex justify-center '>
-
+      {/* <div className={`h-full max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
+        <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1>
+        <div className=''>
+          <audio autoplay="autoplay" controls="controls">
+              <source src={audio} /> 
+              <a>Download this file.</a>
+          </audio>
+        </div>
+        <div className='mt-10 '>
+          <h1 className="text-3xl font-bold my-1 text-center">Zany ary ny clip vaovao!</h1>
+          <video controls preload className='w-full'>
+              <source src={video} type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'" />
+              <p> Your browser is old. <a href="cohagenPhoneCall.mp4">Download this video instead.</a> </p>
+          </video>
+        </div>
+      </div> */}
     </div>
     </>
   );
