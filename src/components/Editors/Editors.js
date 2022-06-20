@@ -79,25 +79,35 @@ function Editors() {
     </div>
 
     <div className='w-full flex justify-center '>
-      {/* <div className={`h-full max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
-        <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1>
-        <div className=''>
+      <div className={`w-full h-44 max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
+        <label for='teraka' className='text-4xl text-gray-600 font-bold'>
+          Daty Naterahana:  
+          <input id='teraka' type='datetime-local' placeholder='01/01/1999 00:00:00' className='px-5 text-black'/>
+        </label>
+        
+        {/* <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1> */}
+        {/* <div className=''>
           <audio autoplay="autoplay" controls="controls">
               <source src={audio} /> 
               <a>Download this file.</a>
           </audio>
-        </div>
-        <div className='mt-10 '>
+        </div> */}
+        {/* <div className='mt-10 '>
           <h1 className="text-3xl font-bold my-1 text-center">Zany ary ny clip vaovao!</h1>
           <video controls preload className='w-full'>
               <source src={video} type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'" />
               <p> Your browser is old. <a href="cohagenPhoneCall.mp4">Download this video instead.</a> </p>
           </video>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
     </div>
     </>
   );
 }
 
 export default Editors;
+
+<label for='daty'>
+  Daty Naterahana:  
+  <input id='daty' type='datetime-local' />
+</label>
