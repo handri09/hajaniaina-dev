@@ -1,15 +1,16 @@
 import React from 'react'
+import './components/High.css'
 import SyntaxHighlighter from "react-syntax-highlighter";
 
-function Highs({ language, theme, children }) {
+function High({ language, theme, children }) {
   return (
     <SyntaxHighlighter
       language={language}
       style={theme}
-      className=""
+      className="highlighter"
     >
       {children}
     </SyntaxHighlighter>
   );
 };
-export default Highs
+export default High;
