@@ -11,7 +11,7 @@ function CustomLink({ children, to, ...props }, ref) {
     <div>
       <Link
         className={`
-          z-10
+          z-10 font-bold
           px-2 md:px-1 py-2 lg:px-4 xl:px-6
           mt-2 md:mt-0 md:ml-4 
           bg-transparent 

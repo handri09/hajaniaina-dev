@@ -1,7 +1,7 @@
 import './Editors.css'
 import React from 'react'
-import {Editor, High, Dropdown, Highs} from '../../pages'
 import fb from "../../assets/fb.png";
+import { Dropdown, Editor, Highs, High } from './components';
 
 import * as themes from "react-syntax-highlighter/dist/esm/styles/hljs";
 import * as languages from "react-syntax-highlighter/dist/esm/languages/hljs";
