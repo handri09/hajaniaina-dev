@@ -22,38 +22,36 @@ function Editors() {
           <input id='title' onChange={(e) => setTitle(e.target.value)} className="m-5"/>
         </label>
 
-      <div className="ControlsBox">
-        <Dropdown
-          defaultTheme={defaultLanguage}
-          onChange={(e) => setLanguage(e.target.value)}
-          data={languages}
-        />
-        <Dropdown
-          defaultTheme={defaultTheme}
-          onChange={(e) => setTheme(e.target.value)}
-          data={themes}
-        />
+        <div className="flex justify-center gap-5"> {/*"ControlsBox"*/}
+          <Dropdown
+            defaultTheme={defaultLanguage}
+            onChange={(e) => setLanguage(e.target.value)}
+            data={languages}
+          />
+          <Dropdown
+            defaultTheme={defaultTheme}
+            onChange={(e) => setTheme(e.target.value)}
+            data={themes}
+          />
+        </div>
+
+        <div className="PanelsBox">
+          <Editor
+            placeHolder="Type your code here..."
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <High language={language} theme={themes[theme]}>
+            {input}
+          </High>
+        </div>
+
+        <div className="flex justify-center items-center text-6xl font-mono w-full h-20 mt-56">
+          {/* <p className="text-gray-500 italic">L'Operateur <span className="text-red-400 italic font-bold text-7xl">"in"</span> dans JavaScript</p> */}
+        </div>
       </div>
 
-      <div className="PanelsBox">
-        <Editor
-          placeHolder="Type your code here..."
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <High language={language} theme={themes[theme]}>
-          {input}
-        </High>
-      </div>
-
-      <div className="flex justify-center items-center text-6xl font-mono w-full h-20 mt-56">
-        {/* <p className="text-gray-500 italic">L'Operateur <span className="text-red-400 italic font-bold text-7xl">"in"</span> dans JavaScript</p> */}
-      </div>
-    </div>
-
-
-
-    <div className={` flex flex-col justify-end w-full h-screen pb-0`}>
-      <div className="flex justify-center gap-10 text-2xl font-mono my-10 border-green-600">
+      <div className={` flex flex-col justify-end w-full h-screen pb-0`}>
+        <div className="flex justify-center gap-10 text-2xl font-mono my-10 border-green-600">
           <div className="flex flex-col rounded-xl bg-gray-800 shadow-xl shadow-purple-500/100 min-w-[50%] max-w-full " style={{ backgroundColor:"rgb(40,44,52)"}}>
             {/** Button */}       
             <div className="flex items-center h-10 mx-2 gap-2 px-5 mt-2">
@@ -72,35 +70,35 @@ function Editors() {
               {/* {`const fruits = ['Paoma🍎', 'Voasary🍊', 'Akondro🍌']`}  */}
             </div>      
           </div>
+        </div>
+        <div className="flex items-center justify-center w-full h-20 mb-20">
+          <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
+        </div>
       </div>
-      <div className="flex items-center justify-center w-full h-20 mb-20">
-        <p className="flex items-center font-mono font-bold text-blue-500 text-4xl"><img src={fb}/>hajaniaina-dev</p>
-      </div>
-    </div>
 
-    <div className='w-full flex justify-center '>
-      <div className={`w-full h-44 max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
-        <label for='teraka' className='text-4xl text-gray-600 font-bold'>
-          Daty Naterahana:  
-          <input id='teraka' type='datetime-local' placeholder='01/01/1999 00:00:00' className='px-5 text-black'/>
-        </label>
-        
-        {/* <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1> */}
-        {/* <div className=''>
-          <audio autoplay="autoplay" controls="controls">
-              <source src={audio} /> 
-              <a>Download this file.</a>
-          </audio>
-        </div> */}
-        {/* <div className='mt-10 '>
-          <h1 className="text-3xl font-bold my-1 text-center">Zany ary ny clip vaovao!</h1>
-          <video controls preload className='w-full'>
-              <source src={video} type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'" />
-              <p> Your browser is old. <a href="cohagenPhoneCall.mp4">Download this video instead.</a> </p>
-          </video>
-        </div> */}
+      <div className='w-full flex justify-center '>
+        <div className={`w-full h-44 max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
+          <label for='teraka' className='text-4xl text-gray-600 font-bold'>
+            Daty Naterahana:  
+            <input id='teraka' type='datetime-local' placeholder='01/01/1999 00:00:00' className='px-5 text-black'/>
+          </label>
+          
+          {/* <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1> */}
+          {/* <div className=''>
+            <audio autoplay="autoplay" controls="controls">
+                <source src={audio} /> 
+                <a>Download this file.</a>
+            </audio>
+          </div> */}
+          {/* <div className='mt-10 '>
+            <h1 className="text-3xl font-bold my-1 text-center">Zany ary ny clip vaovao!</h1>
+            <video controls preload className='w-full'>
+                <source src={video} type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'" />
+                <p> Your browser is old. <a href="cohagenPhoneCall.mp4">Download this video instead.</a> </p>
+            </video>
+          </div> */}
+        </div>
       </div>
-    </div>
     </>
   );
 }
