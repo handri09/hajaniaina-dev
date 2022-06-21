@@ -18,10 +18,19 @@ function CustomLink({ children, to, ...props }, ref) {
           hover:text-violet-700 hover:border-b-violet-700 hover:border-b 
           focus:text-violet-700 focus:border-b-violet-700 focus:border-b 
           ${
-            match
-              ? 'text-violet-700 border-b-violet-700 border-b font-bold'
+            children === 'Classroom'
+              ? 'border border-violet-700 rounded-md'
               : ''
-          }`}
+          }
+          ${
+            match
+              ? //'text-violet-700 border-b-violet-700 border-b font-bold '
+                children === 'Classroom'
+                ? 'border font-bold text-white bg-violet-700 rounded-md focus:text-white'
+                : ''
+              : ''
+          }
+          `}
           to={to}
           {...props}>
           {children}

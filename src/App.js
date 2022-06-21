@@ -1,9 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Editors, NavBar } from './components';
-import { Editor, Home } from './pages';
-
-const Classroom = () => {  return <h1>Test</h1> };
+import { Home, Classroom } from './pages';
 
 function App() {
   return (

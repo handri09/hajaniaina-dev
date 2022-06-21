@@ -1,4 +1,4 @@
 import Home from './home/home';
-import Compiler from './compiler/compiler';
+import Classroom from './classroom/classroom';  
 
-export { Home, Compiler };
+export { Home, Classroom };
