@@ -18,9 +18,7 @@ function Editors() {
   return (
     <>
       <div className={`w-full h-screen`}>
-        <label for='title'>Title: 
-          <input id='title' onChange={(e) => setTitle(e.target.value)} className="m-5"/>
-        </label>
+        Title: <input id='title' onChange={(e) => setTitle(e.target.value)} className="m-5"/>
 
         <div className="flex justify-center gap-5"> {/*"ControlsBox"*/}
           <Dropdown
@@ -78,7 +76,7 @@ function Editors() {
 
       <div className='w-full flex justify-center '>
         <div className={`w-full h-44 max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
-          <label for='teraka' className='text-4xl text-gray-600 font-bold'>
+          <label className='text-4xl text-gray-600 font-bold'>
             Daty Naterahana:  
             <input id='teraka' type='datetime-local' placeholder='01/01/1999 00:00:00' className='px-5 text-black'/>
           </label>

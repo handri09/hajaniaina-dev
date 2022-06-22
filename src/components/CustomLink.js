@@ -19,7 +19,7 @@ function CustomLink({ children, to, ...props }, ref) {
           focus:text-violet-700 focus:border-b-violet-700 focus:border-b 
           ${
             children === 'Classroom'
-              ? 'border border-violet-700 rounded-md'
+              ? 'border border-violet-700 rounded-md hover:bg-violet-700 focus:bg-violet-700 hover:text-white focus:text-white'
               : ''
           }
           ${
