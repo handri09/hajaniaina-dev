@@ -1,3 +1,3 @@
-import Nav from './Nav';
+import Courses from './courses/courses';
 
-export { Nav };
+export { Courses };
