@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Nav } from './components';
 
 function Classroom() {
   return (
-    <div className='w-full max-w-screen-2xl mx-auto py-5 px-4'>
-      <h1 className='text-center text-violet-700 text-3xl'>Classroom</h1>
-    </div>
+    <>
+      <Nav />
+      <div className='w-full max-w-screen-lg mx-auto px-1 my-1'>
+
+        <div className='w-full bg-white rounded shadow-md flex'>
+          <h1 className='text-center text-violet-700'>Classroom</h1>
+        </div>
+
+      </div>
+    </>
   )
 }
 
