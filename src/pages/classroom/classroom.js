@@ -13,9 +13,12 @@ function Classroom() {
             <div className='flex py-5 px-3'>
               <img src={react} alt='react' className='h-20' />
             </div>
-            <div className='flex flex-col gap-1 p-1 h-28 justify-center'>
+            <div className='flex flex-col gap-1 p-1 h-full justify-center border'>
               <p className='tracking-widest text-gray-600'>React Developer</p>
               <div className='flex jsutify-start'><p className='tracking-widest p-1 text-gray-600 text-xs border border-gray-700 font-bold inline rounded bg-gray-100 hover:bg-gray-200'>NANODEGREE</p></div>
+            </div>
+            <div className='w-full'>
+              <p className=''>THE REST</p>
             </div>
           </div>
 
