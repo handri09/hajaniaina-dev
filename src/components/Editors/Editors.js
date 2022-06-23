@@ -75,11 +75,24 @@ function Editors() {
       </div>
 
       <div className='w-full flex justify-center '>
-        <div className={`w-full h-44 max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
-          <label className='text-4xl text-gray-600 font-bold'>
+        <div className={`w-full max-w-screen-lg bg-white rounded-lg text-2xl flex justify-center items-center flex-col gap-5 px-10 pt-10 pb-10 shadow-lg mb-96`}>
+          {/* <label className='text-4xl text-gray-600 font-bold'>
             Daty Naterahana:  
             <input id='teraka' type='datetime-local' placeholder='01/01/1999 00:00:00' className='px-5 text-black'/>
-          </label>
+          </label> */}
+          <div className=''>
+            <b> {`<b>`} Mamadika ny text ho lasa "BOLD". {`</b>`}</b><br />
+            <i> {`<i>`} Mamadika ny text ho lasa "ITALIC". {`</i>`}</i><br />
+            <em> {`<em>`} Mamadika ho "ITALIC". {`</em>`}</em><br />
+            <big> {`<big>`} Mitombo ny abehan'ny text. {`</big>`}</big><br />
+            <small> {`<small>`} Mihena ny abehan'ny text. {`</small>`}</small><br />
+            Eto dia: <sub> {`<sub>`} Midina kely ny text ho lasa "SUBSCRIPT". {`</sub>`}</sub><br />
+            Eto kosa dia: <sup> {`<sup>`} Miakatra ny text ho "SUPERSCRIPT". {`</sup>`}</sup><br />
+            <del> {`<del>`} Maneho ny text ho lasa "VOATSIPIKA". {`</del>`}</del><br />
+            <strong> {`<strong>`} Maneho ny text ho lasa "IMPORTANT".  {`</strong>`}</strong><br />
+            <mark> {`<mark>`} Maneho ny text ho lasa "HIGHLIGHTED" na voaloko mavo.  {`</mark>`}</mark><br />
+            <ins> {`<ins>`} Manisy tsipika eo amban'ny text.  {`</ins>`}</ins><br />
+          </div>
           
           {/* <h1 className="text-3xl font-bold text-center">Mihainoa Finaritra eh!</h1> */}
           {/* <div className=''>
@@ -107,3 +120,4 @@ export default Editors;
   Daty Naterahana:  
   <input id='daty' type='datetime-local' />
 </label>
+
