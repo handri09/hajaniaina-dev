@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLearn } from './components';
+import { NavLearn, ReactDev } from './components';
 
 function Learn() {
   return (
     <>
       <NavLearn />
-      <div>Learn</div>
+      <ReactDev />
     </>
   );
 }

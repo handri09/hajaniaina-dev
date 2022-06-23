@@ -1,3 +1,4 @@
 import NavLearn from './NavLearn';
+import ReactDev from './reactdev/reactdev';
 
-export { NavLearn };
+export { NavLearn, ReactDev };
