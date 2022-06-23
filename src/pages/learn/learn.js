@@ -1,8 +1,12 @@
 import React from 'react';
+import { NavLearn } from './components';
 
 function Learn() {
   return (
-    <div>Learn</div>
+    <>
+      <NavLearn />
+      <div>Learn</div>
+    </>
   );
 }
 
