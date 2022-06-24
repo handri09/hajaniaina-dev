@@ -10,7 +10,7 @@ function ReactDev() {
   return (
     <>
       <div className={`w-full bg-white h-screen flex  antialiased text-gray-700`}>
-        <Nav open={open} sections={['1.rewr', '2.wrwe fe', '3.dslovln vs']}/>
+        <Nav open={open} sections={['1.rewr', '2.wrwe fe', '3.dslovln vs']} chap={102} les={''}/>
         
         {/* Course Content*/}
         <div className={`w-full h-full bg-white flex flex-col justify-start items-center overflow-scroll px-2 pt-14`}>

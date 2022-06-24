@@ -2,6 +2,7 @@ import React from 'react';
 import { chapter } from '../utils/data';
 
 function Course({ chap }) {
+  console.log(chapter[chap])
   return (
   <div className={`w-full max-w-screen-md flex flex-col gap-2`}>
     <div className={`w-full border-b-2 border-violet-700 py-1 text-2xl`}>Why React ?</div>
