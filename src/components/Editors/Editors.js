@@ -116,8 +116,3 @@ function Editors() {
 
 export default Editors;
 
-<label for='daty'>
-  Daty Naterahana:  
-  <input id='daty' type='datetime-local' />
-</label>
-
