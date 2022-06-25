@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hajaniaina-dev/static/css/main.723591b1.css",
-    "main.js": "/hajaniaina-dev/static/js/main.f0bbff6b.js",
+    "main.css": "/hajaniaina-dev/static/css/main.a3019a28.css",
+    "main.js": "/hajaniaina-dev/static/js/main.69eb5146.js",
     "static/js/787.2f4fe072.chunk.js": "/hajaniaina-dev/static/js/787.2f4fe072.chunk.js",
     "static/media/ds.png": "/hajaniaina-dev/static/media/ds.0554449daeb9c765652a.png",
     "static/media/logo.png": "/hajaniaina-dev/static/media/logo.0d5f5bd307165e87f8b4.png",
     "static/media/open.png": "/hajaniaina-dev/static/media/open.1c4a61a1f00ca3b6925f.png",
     "index.html": "/hajaniaina-dev/index.html",
-    "main.723591b1.css.map": "/hajaniaina-dev/static/css/main.723591b1.css.map",
-    "main.f0bbff6b.js.map": "/hajaniaina-dev/static/js/main.f0bbff6b.js.map",
+    "main.a3019a28.css.map": "/hajaniaina-dev/static/css/main.a3019a28.css.map",
+    "main.69eb5146.js.map": "/hajaniaina-dev/static/js/main.69eb5146.js.map",
     "787.2f4fe072.chunk.js.map": "/hajaniaina-dev/static/js/787.2f4fe072.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.723591b1.css",
-    "static/js/main.f0bbff6b.js"
+    "static/css/main.a3019a28.css",
+    "static/js/main.69eb5146.js"
   ]
 }
