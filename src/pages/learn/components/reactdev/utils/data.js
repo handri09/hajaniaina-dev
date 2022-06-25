@@ -1,4 +1,3 @@
-
 export const chapter = {
   101 : {
     id: 101,
@@ -25,7 +24,7 @@ export const chapter = {
             name: 'What is Composition'
           }, 
           {
-            id: 1020103,
+            id: '1020103',
             name: 'What is Declarative Code',
             content: [
                 ('title', 'Why React'), ('paragraph', 'From Wikiedia, Composition is :'),
