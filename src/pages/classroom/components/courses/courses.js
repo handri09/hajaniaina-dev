@@ -7,8 +7,9 @@ function Courses() {
   return (
     <>
       <Nav />
-      <CourseCard react={ react } title={`React Developer`} completion={99} />
-      <CourseCard react={ ds } title={`Data Science with Python`} completion={100} />
+      <CourseCard link={'react'} react={ react } title={`React Developer`} completion={99} />
+      <CourseCard link={'datascience'} react={ ds } title={`Data Science with Python`} completion={100} />
+      <CourseCard link={'awsml'} react={ ds } title={`AWS Machine Learning`} completion={30} />
     </>
   )
 }
