@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function NavLearn() {
   return (
-    <div className={`w-full bg-violet-900 flex fixed top-0`}>
+    <div className={`w-full bg-violet-900 flex fixed top-0 z-50`}>
       <div className={`hidden w-1/3 md:flex justify-start pl-5 items-center`}>
         <p className={`text-white text-xl`}>Hajaniaina-dev</p>
       </div>
