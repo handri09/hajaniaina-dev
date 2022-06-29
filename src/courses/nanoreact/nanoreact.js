@@ -13,7 +13,7 @@ function NanoReact() {
         <Header />
         <div className={`w-full flex flex-col gap-3`}>
           <Introduction />
-          <ReactFundamentas />
+          <ReactFundamentals />
         </div>
         <ReactRedux />
         <ReactNative />
@@ -48,7 +48,6 @@ const Header = () => (
   </>
 );
 
-
 const Introduction = () => (
   <div className={`${box} flex flex-col gap-3 antialiased`}>
     <p className='font-bold tracking-widest border-b-2 border-violet-500 pb-2'>Introduction</p>
@@ -60,66 +59,77 @@ const Introduction = () => (
       Manampy an'izay dia ireo "code reviewd projects" an ity program ity, dia hanampy anao aminy fivoaranao.
     </p>
     <hr />
-    <Link to='reactintro' className={`${box} drop-shadow`}>
-      <p className='font-bold'>Welcome to the React Nanodegree Program</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
+
+    <BoxMD
+      link='/hajaniaina-dev/nanoreact/intro'
+      title='Welcome to the React Nanodegree Program'
+      contents={`
         Ho hitanao hoe inona ny tena mampiavaka ny react. 
         Hanoratra fonction tsotra isika mba ahazo fonction complexe, declarative code, ary ahita unidirectional data flow, ary ahita fa React dia Javascript ihany.
-      </p>
-    </Link>
+      `} />
   </div>
 );
 
-const ReactFundamentas = () => (
+const ReactFundamentals = () => (
   <div className={`${box} flex flex-col gap-2 antialiased`}>
     <p className='font-bold tracking-widest border-b-2 border-violet-500 pb-2'>React Fundamentals</p>
     <p className='text-sm font-sans tracking-widest font-semibold'>PROJECTS</p>
     <p className='tracking-widest text-sm pl-5'>NyBokiko: Application hanarahana ireo Bokiko</p>
     <hr />
-    <Link to='/hajaniaina-dev/' className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold'>Fa maninona no React!</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
+
+    <BoxMD
+      link='/hajaniaina-dev/nanoreact/reactfundamentals/whyreact'
+      title='Fa maninona no React!'
+      contents={`
         Ho hitatsika ny fahatsaran ny react. Hanambatra function tsotra maromaro isika mba
         ahazoana complex fonction, hanoratra declarative code ihany koa, ary ahita ny fizotrin'ny données ao aminy react.
         Ka ahita fa ny React Dia JavaScript ihany.
-      </p>
-    </Link>
-    <div className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold'>Rendering UI With React</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
+      `} />
+
+    <BoxMD
+      link='/hajaniaina-dev/nanoreact/reactfundamentals/uirendering'
+      title='Rendering UI With React'
+      contents={`
         Hianatra isika ny fazahoana sy fi-render element aminy react. 
         Ahita ny antsoina hoe JSX ary hamorona Application React aminy 
         fampiasana ny "create-react-app". Hijery ny indray mitopy maso ny hoe Components.
-      </p>
-    </div>
-    <div className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold'>State Management</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
-        Hianatra ny fampiasana donées avy aminy components samy hafa isika.
-        Oviana ary ahoana ny mampiasa PropTypes, ary ahoana ny fampiasa Controlled Components.
-      </p>
-    </div>
-    <div className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold'>Lifecycle Events</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
-        Eto isika dia hianatra ny hoe aiza ary oviana no "fetch data" ao aminy react.
-        Ahita ireo karazana lifecycle hooks ka oviana no hampiasa azy.
-      </p>
-    </div>
-    <div className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold'>React Router</p>
-      <p className='text-sm max-w-screen-sm leading-relaxed'>
-        Hinatra hampiasa routing aminy react isika. Ho hitatsika ao ny BrowserRouter, 
-        Link, ary ny Route components mba ahazoana render dynamic.
-      </p>
-    </div>
-    <button className={`${box} drop-shadow leading-relaxed`}>
-      <p className='font-bold text-left'>NyBokiko: Application hanarahana ireo Bokiko </p>
-      <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
-        Amin'ity project ity, dia hamorona web application afahana misafidy sy 
-        mametraka category amin ireo boky no vakiana na ho vakiana ianao.
-      </p>
-    </button>
+      `} />
+
+    {
+      [
+        [
+          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+          'State Management',
+          `Hianatra ny fampiasana donées avy aminy components samy hafa isika.
+           Oviana ary ahoana ny mampiasa PropTypes, ary ahoana ny fampiasa Controlled Components.`
+        ],
+        [
+          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+          'Lifecycle Events',
+          `Eto isika dia hianatra ny hoe aiza ary oviana no "fetch data" ao aminy react.
+           Ahita ireo karazana lifecycle hooks ka oviana no hampiasa azy.`
+        ],
+        [
+          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+          'React Router',
+          `Hinatra hampiasa routing aminy react isika. Ho hitatsika ao ny BrowserRouter, 
+           Link, ary ny Route components mba ahazoana render dynamic.`
+        ],
+        [
+          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+          'NyBokiko: Application hanarahana ireo Bokiko',
+          `Amin'ity project ity, dia hamorona web application afahana misafidy sy 
+           mametraka category amin ireo boky no vakiana na ho vakiana ianao.`
+        ]
+      ].map( (lesson, item) => (
+        <BoxMD
+          key={item}
+          link={lesson[0]}
+          title={lesson[1]}
+          contents={lesson[2]}
+          />  
+      ))
+    }
   </div>
 );
 
@@ -134,6 +144,7 @@ const ReactRedux = () => (
       </div>
     </div>
     <div className={`w-full p-2 bg-white px-3 flex flex-col gap-3 py-3`}>
+
       <button className={`${box} drop-shadow leading-relaxed`}>
         <p className='font-bold text-left'>Managing State</p>
         <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
@@ -148,6 +159,44 @@ const ReactRedux = () => (
           dia "Redux" avokoa no handrindra izany.
         </p>
       </button>
+
+
+      {
+        [
+          [
+            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+            'State Management',
+            `Hianatra ny fampiasana donées avy aminy components samy hafa isika.
+            Oviana ary ahoana ny mampiasa PropTypes, ary ahoana ny fampiasa Controlled Components.`
+          ],
+          [
+            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+            'Lifecycle Events',
+            `Eto isika dia hianatra ny hoe aiza ary oviana no "fetch data" ao aminy react.
+            Ahita ireo karazana lifecycle hooks ka oviana no hampiasa azy.`
+          ],
+          [
+            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+            'React Router',
+            `Hinatra hampiasa routing aminy react isika. Ho hitatsika ao ny BrowserRouter, 
+            Link, ary ny Route components mba ahazoana render dynamic.`
+          ],
+          [
+            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
+            'NyBokiko: Application hanarahana ireo Bokiko',
+            `Amin'ity project ity, dia hamorona web application afahana misafidy sy 
+            mametraka category amin ireo boky no vakiana na ho vakiana ianao.`
+          ]
+        ].map( (lesson, item) => (
+          <BoxMD
+            key={item}
+            link={lesson[0]}
+            title={lesson[1]}
+            contents={lesson[2]}
+            />  
+        ))
+      }
+
     </div>
   </div>
 );
