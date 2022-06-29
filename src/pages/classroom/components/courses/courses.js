@@ -7,9 +7,9 @@ function Courses() {
   return (
     <>
       <Nav />
-      <CourseCard link={'react'} react={ react } title={`React Developer`} completion={99} />
-      <CourseCard link={'datascience'} react={ ds } title={`Data Science with Python`} completion={100} />
-      <CourseCard link={'awsml'} react={ ds } title={`AWS Machine Learning`} completion={30} />
+      <CourseCard link={'/hajaniaina-dev/nanoreact'} react={ react } title={`React Developer`} completion={99} />
+      <CourseCard link={'/hajaniaina-dev/nanods'} react={ ds } title={`Data Science with Python`} completion={100} />
+      <CourseCard link={'/hajaniaina-dev/nanoaws'} react={ ds } title={`AWS Machine Learning`} completion={30} />
     </>
   )
 }
