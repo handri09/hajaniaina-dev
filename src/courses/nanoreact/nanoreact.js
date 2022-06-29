@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavClassRoom } from '../../components';
-import { Link } from 'react-router-dom';
+import { BoxMD, Header, Introduction, ReactFundamentals } from './components';
 
 // styles
 const box = 'w-full py-4 px-3 bg-white shadow-sm hover:shadow-md rounded text-gray-700';
@@ -24,115 +24,6 @@ function NanoReact() {
 
 export default NanoReact;
 
-const Header = () => (
-  <>
-    <div className={`w-full border-b-2 border-violet-700 text-3xl text-gray-600 font-normal pt-3 pb-2`}>React Developer</div>
-    <div className={`w-full py-4 shadow-md bg-white rounded flex items-center justify-center px-5 hover:shadow-lg`}>
-      <div className={`w-1/2 flex flex-col gap-2`}>
-        <p className={`text-xs text-gray-700 tracking-widest`}>PROGRAM COMPLETED</p>
-        <p className='font-bold text-gray-700 tracking-widest'>You're all done!</p>
-      </div>
-      <div className={`w-1/2 flex justify-end`}>
-        <p className={`text-sm font-bold text-gray-600 tracking-widest hover:bg-gray-100 px-3 py-2 rounded`}>GRADUATE</p>
-      </div>
-    </div>
-    <div className={`w-full flex`}>
-      <div className={`w-1/2`}>
-        <p className={`text-2xl tracking-widest text-gray-600 font-extralight`}>Curriculum</p>
-      </div>
-      <div className={`w-1/2 flex justify-end uppercase text-sm tracking-widest font-bold text-gray-600 gap-5`}>
-        <p className={`hover:border-b-4 border-violet-300`}>core</p>
-        <p className={`hover:border-b-4 border-violet-300`}>elective</p>
-      </div>
-    </div>
-  </>
-);
-
-const Introduction = () => (
-  <div className={`${box} flex flex-col gap-3 antialiased`}>
-    <p className='font-bold tracking-widest border-b-2 border-violet-500 pb-2'>Introduction</p>
-    <p className='text-sm pb-3 max-w-screen-sm'>
-      Ny Program "React Developer" dia misy cours 3 ary projets 3. Isakin'ny projet iray dia opportunite hoan-tsika 
-      hanehoana sy hanamafisana ireo lesona nianarana.
-      Ireo Project vitanao kosa dia ho lasa anisan ireo "Career Portfolio" ho anao, izay haneho ny fahafehezanao ny 
-      React an'ireo ho Mpampiasa anao.
-      Manampy an'izay dia ireo "code reviewd projects" an ity program ity, dia hanampy anao aminy fivoaranao.
-    </p>
-    <hr />
-
-    <BoxMD
-      link='/hajaniaina-dev/nanoreact/intro'
-      title='Welcome to the React Nanodegree Program'
-      contents={`
-        Ho hitanao hoe inona ny tena mampiavaka ny react. 
-        Hanoratra fonction tsotra isika mba ahazo fonction complexe, declarative code, ary ahita unidirectional data flow, ary ahita fa React dia Javascript ihany.
-      `} />
-  </div>
-);
-
-const ReactFundamentals = () => (
-  <div className={`${box} flex flex-col gap-2 antialiased`}>
-    <p className='font-bold tracking-widest border-b-2 border-violet-500 pb-2'>React Fundamentals</p>
-    <p className='text-sm font-sans tracking-widest font-semibold'>PROJECTS</p>
-    <p className='tracking-widest text-sm pl-5'>NyBokiko: Application hanarahana ireo Bokiko</p>
-    <hr />
-
-    <BoxMD
-      link='/hajaniaina-dev/nanoreact/reactfundamentals/whyreact'
-      title='Fa maninona no React!'
-      contents={`
-        Ho hitatsika ny fahatsaran ny react. Hanambatra function tsotra maromaro isika mba
-        ahazoana complex fonction, hanoratra declarative code ihany koa, ary ahita ny fizotrin'ny données ao aminy react.
-        Ka ahita fa ny React Dia JavaScript ihany.
-      `} />
-
-    <BoxMD
-      link='/hajaniaina-dev/nanoreact/reactfundamentals/uirendering'
-      title='Rendering UI With React'
-      contents={`
-        Hianatra isika ny fazahoana sy fi-render element aminy react. 
-        Ahita ny antsoina hoe JSX ary hamorona Application React aminy 
-        fampiasana ny "create-react-app". Hijery ny indray mitopy maso ny hoe Components.
-      `} />
-
-    {
-      [
-        [
-          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-          'State Management',
-          `Hianatra ny fampiasana donées avy aminy components samy hafa isika.
-           Oviana ary ahoana ny mampiasa PropTypes, ary ahoana ny fampiasa Controlled Components.`
-        ],
-        [
-          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-          'Lifecycle Events',
-          `Eto isika dia hianatra ny hoe aiza ary oviana no "fetch data" ao aminy react.
-           Ahita ireo karazana lifecycle hooks ka oviana no hampiasa azy.`
-        ],
-        [
-          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-          'React Router',
-          `Hinatra hampiasa routing aminy react isika. Ho hitatsika ao ny BrowserRouter, 
-           Link, ary ny Route components mba ahazoana render dynamic.`
-        ],
-        [
-          '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-          'NyBokiko: Application hanarahana ireo Bokiko',
-          `Amin'ity project ity, dia hamorona web application afahana misafidy sy 
-           mametraka category amin ireo boky no vakiana na ho vakiana ianao.`
-        ]
-      ].map( (lesson, item) => (
-        <BoxMD
-          key={item}
-          link={lesson[0]}
-          title={lesson[1]}
-          contents={lesson[2]}
-          />  
-      ))
-    }
-  </div>
-);
-
 const ReactRedux = () => (
   <div >
   
@@ -144,48 +35,19 @@ const ReactRedux = () => (
       </div>
     </div>
     <div className={`w-full p-2 bg-white px-3 flex flex-col gap-3 py-3`}>
-
-      <button className={`${box} drop-shadow leading-relaxed`}>
-        <p className='font-bold text-left'>Managing State</p>
-        <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
-          Hianatra fika ahazoana state predictable isika, ary hanambatra izany state izany aminy toerana iray
-          ka hanangana fitsipika
-        </p>
-      </button>
-      <button className={`${box} drop-shadow leading-relaxed`}>
-        <p className='font-bold text-left'>UI + Redux</p>
-        <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
-          Hikirakira "Vanilla JavaScript" isika amin'ity indray mitoraka ity, ka ny "State Managment" 
-          dia "Redux" avokoa no handrindra izany.
-        </p>
-      </button>
-
-
       {
         [
           [
-            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-            'State Management',
-            `Hianatra ny fampiasana donées avy aminy components samy hafa isika.
-            Oviana ary ahoana ny mampiasa PropTypes, ary ahoana ny fampiasa Controlled Components.`
+            '/hajaniaina-dev/nanoreact/reactredux/managingstate',
+            'Managing State',
+            `Hianatra fika ahazoana state predictable isika, ary hanambatra izany state izany aminy toerana iray
+             ka hanangana fitsipika`
           ],
           [
-            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-            'Lifecycle Events',
-            `Eto isika dia hianatra ny hoe aiza ary oviana no "fetch data" ao aminy react.
-            Ahita ireo karazana lifecycle hooks ka oviana no hampiasa azy.`
-          ],
-          [
-            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-            'React Router',
-            `Hinatra hampiasa routing aminy react isika. Ho hitatsika ao ny BrowserRouter, 
-            Link, ary ny Route components mba ahazoana render dynamic.`
-          ],
-          [
-            '/hajaniaina-dev/nanoreact/reactfundamentals/uirendering',
-            'NyBokiko: Application hanarahana ireo Bokiko',
-            `Amin'ity project ity, dia hamorona web application afahana misafidy sy 
-            mametraka category amin ireo boky no vakiana na ho vakiana ianao.`
+            '/hajaniaina-dev/nanoreact/reactredux/uiredux',
+            'UI + Redux',
+            `Hikirakira "Vanilla JavaScript" isika amin'ity indray mitoraka ity, ka ny "State Managment" 
+             dia "Redux" avokoa no handrindra izany.`
           ]
         ].map( (lesson, item) => (
           <BoxMD
@@ -196,14 +58,12 @@ const ReactRedux = () => (
             />  
         ))
       }
-
     </div>
   </div>
 );
 
 const ReactNative = () => (
   <div>
-  
     <div className={`${box} rounded-none border-b-2`}>
       <p className='font-bold tracking-widest border-b-2 border-violet-500 pb-2'>React Native</p>
       <div className='mt-2'>
@@ -212,28 +72,29 @@ const ReactNative = () => (
       </div>
     </div>
     <div className={`w-full p-2 bg-white px-3 flex flex-col gap-3`}>
-      <button className={`${box} drop-shadow leading-relaxed`}>
-        <p className='font-bold text-left'>Up and Running with React Native</p>
-        <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
-          Hianatra ny ideologie ao ambadikin'ny React Native sy ny fiasany ary ny fanomboana application iOS na Android isika.
-        </p>
-      </button>
 
-      <BoxMD
-        link='/hajaniaina-dev'
-        title='React vs React Native'
-        contents={`
-        Hijery ny maha samy hafa ny Application hoan'ny Web ary Native isika, ary ny difference an'ny React sy React Native API.
-        `} />
+
+      {
+        [
+          [
+            '/hajaniaina-dev/nanoreact/reactnative/upandrunning',
+            'Up and Running with React Native',
+            `Hianatra ny ideologie ao ambadikin'ny React Native sy ny fiasany ary ny fanomboana application iOS na Android isika.`
+          ],
+          [
+            '/hajaniaina-dev/nanoreact/reactnative/reactvsnative',
+            'React vs React Native',
+            `Hijery ny maha samy hafa ny Application hoan'ny Web ary Native isika, ary ny difference an'ny React sy React Native API.`
+          ]
+        ].map( (lesson, item) => (
+          <BoxMD
+            key={item}
+            link={lesson[0]}
+            title={lesson[1]}
+            contents={lesson[2]}
+            />  
+        ))
+      }
     </div>
   </div>
-);
-
-const BoxMD = ({ link, title, contents }) => (
-  <Link to={link} className={`${box} drop-shadow leading-relaxed`}>
-    <p className='font-bold text-left'>{title}</p>
-    <p className='text-sm max-w-screen-sm leading-relaxed text-left'>
-      {contents}
-    </p>
-  </Link>
 );
