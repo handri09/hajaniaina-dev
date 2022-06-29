@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Editors, NavBar } from './components';
 import { Home, Classroom, Learn } from './pages';
+import { NanoReact } from './courses';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='demos' element={<Editors />} />
         </Route>
         <Route path='hajaniaina-dev/learn' element={<Learn />} />
+        <Route path='hajaniaina-dev/nanoreact' element={<NanoReact />} />
       </Routes>
     </>
   );

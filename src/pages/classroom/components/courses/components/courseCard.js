@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function CourseCard(props) {
-  const { react, title, completion } = props;
+  const { react, title, completion, link } = props;
   return (
     <div className={`w-full max-w-screen-md mx-auto p-2`}>
-      <Link to='/hajaniaina-dev/learn' className={`w-full rounded flex flex-col shadow-md hover:shadow-lg`}> {/*to={title.split(' ')[0].toLowerCase()}*/}
+      <Link to={link} className={`w-full rounded flex flex-col shadow-md hover:shadow-lg`}> {/*to={title.split(' ')[0].toLowerCase()}*/}
         <div className={`w-full h-full bg-white rounded flex`}>
           <div className={`w-1/4 py-5 flex justify-center items-center`}>
             <img src={react} alt='react' className='' style={{ width: '60px' }} />
