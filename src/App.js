@@ -18,7 +18,9 @@ function App() {
         <Route path='hajaniaina-dev/learn' element={<Learn />} />
         <Route path='hajaniaina-dev/nanoreact/' element={<NavClassRoom />}>
           <Route index element={<NanoReact />} /> 
-          <Route path='intro' element={<Intro />} />
+          <Route path='intro' element={<Intro />} >
+            
+          </Route>
         </Route>
       </Routes>
     </>
