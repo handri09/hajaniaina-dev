@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import arrow from '../../../assets/open.png';
+import { NavPan } from './components';
 
 
 function CourseContent({ navs}) {
@@ -16,7 +16,7 @@ function CourseContent({ navs}) {
           w-full bg-white h-screen antialiased
           flex text-gray-700
         `}>
-        <Nav open={open} navs={navs} />
+        <NavPan open={open} navs={navs} />
         
         {/* Course Content*/}
         <div className={`w-full h-full bg-white flex flex-col justify-start items-center overflow-scroll px-2 pt-14`}>
@@ -30,32 +30,6 @@ function CourseContent({ navs}) {
 
 export default CourseContent;
 
-function Nav({ open, navs }) {
-  return (
-    <>
-      <div
-        className={`
-          ${ open ? '' : 'hidden' }
-          w-72 h-full bg-violet-900 
-          pt-14 flex flex-col
-        `}>
-        <div
-          className={`
-            text-white font-bold text-sm 
-            tracking-widest
-          `}>
-          <p>CONCEPTS</p>
-        </div>
-        { 
-          navs && navs.map( (nav, item) => (
-            <Link to={'test'} key={item} className='px-5 py-2 text-sm text-white'>{nav}</Link>
-          ))
-        }
-      </div>
-    </>
-  );
-}
-
 function Header({ open, onOpen }) {
   return (
     <div className={`w-full flex justify-center items-center pt-1`}>
@@ -67,7 +41,7 @@ function Header({ open, onOpen }) {
       </div>
       <div className={`hidden md:block w-10 text-right pr-2`}>?</div>
     </div>
-  )
+  );
 }
 
 function Course({ chap }) {

@@ -11,9 +11,10 @@ function Intro() {
         navs={[
           '1. Tongasoa',
           "2. Inona 'lay hoamboarina ",
-          'c',
-          'd',
-          'e'
+          '3. Ny Strategy',
+          '4. Ny Fisainana React',
+          '5. Ireo Fifanampiana',
+          '6. Fahazoana Fifanampiana'
         ]}/>
     </>
   );
