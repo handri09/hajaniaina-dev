@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function NavPan({ open, navs }) {
   return (
@@ -20,7 +20,7 @@ function NavPan({ open, navs }) {
         </div>
         { 
           navs && navs.map( (nav, item) => (
-            <Link to={'test'} key={item} className={`px-5 py-3 text-md text-white antialiased font-sans`}>{nav}</Link>
+            <Link to={nav[1]} key={item} className={`px-5 py-3 text-md text-white antialiased font-sans`}>{nav[0]}</Link>
           ))
         }
         <div className={`w-full h-full flex justify-center items-end`}>
@@ -34,6 +34,7 @@ function NavPan({ open, navs }) {
           </div>
         </div>
       </div>
+      <Outlet />
     </>
   );
 }

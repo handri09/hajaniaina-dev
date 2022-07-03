@@ -1,3 +1,4 @@
 import Intro from './intro/intro';
+import Tongasoa from './01.tongasoa/tongasoa';
 
-export { Intro };
+export { Intro, Tongasoa };
