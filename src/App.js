@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Editors, NavBar, NavClassRoom } from './components';
 import { Home, Classroom, Learn, NoMatch } from './pages';
 import { NanoReact } from './courses';
-import { Intro, Tongasoa } from './courses/nanoreact/pages'
+import { Intro, Tongasoa, What } from './courses/nanoreact/pages'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route index element={<NanoReact />} /> 
           <Route path='intro' element={<Intro />} >
             <Route index element={<Tongasoa />} />
-            <Route path='what' element={<Classroom />} />
+            <Route path='what' element={<What />} />
             <Route path='strategy' element={<Classroom />} />
             <Route path='mindset' element={<Classroom />} />
             <Route path='community' element={<Classroom />} />

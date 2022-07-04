@@ -1,8 +1,8 @@
 import React from 'react';
-import { CourseContent } from '../../../templates';
-import src from '../../../assests/reactjs/01.intro/project01.png';
+import { CourseContent } from '../../../../templates';
+import src from '../../../../assests/reactjs/01.intro/project01.png';
 
-function Intro() {
+function What() {
   return (
     <>
       <CourseContent
@@ -16,7 +16,7 @@ function Intro() {
         ]}
 
         data={[
-          ['title', 'Introduction'], 
+          ['title', 'What?'], 
           ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
           An welcoming word. Everything can come here, so lets be patient.`], 
           ['code', 'Final code'], 
@@ -31,4 +31,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default What;
