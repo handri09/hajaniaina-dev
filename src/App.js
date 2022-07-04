@@ -4,6 +4,7 @@ import { Editors, NavBar, NavClassRoom } from './components';
 import { Home, Classroom, Learn, NoMatch } from './pages';
 import { NanoReact } from './courses';
 import { Intro, Tongasoa, What } from './courses/nanoreact/pages'
+import { NavPan } from './courses/templates/coursecontent/components';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <Route path='hajaniaina-dev/learn' element={<Learn />} />
         <Route path='hajaniaina-dev/nanoreact/' element={<NavClassRoom />}>
           <Route index element={<NanoReact />} /> 
-          <Route path='intro' element={<Intro />} >
-            <Route index element={<Tongasoa />} />
+          <Route path='intro' element={<NavPan />} >
+            <Route index element={<Intro />} />
             <Route path='what' element={<What />} />
             <Route path='strategy' element={<Classroom />} />
             <Route path='mindset' element={<Classroom />} />
