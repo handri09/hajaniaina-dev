@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { LessonLink } from '.';
 
 function NavPan({ open, navs }) {
   return (
@@ -18,11 +19,15 @@ function NavPan({ open, navs }) {
           `}>
           <p className=''>CONCEPTS</p>
         </div>
-        { 
-          navs && navs.map( (nav, item) => (
-            <Link to={nav[1]} key={item} className={`px-5 py-3 text-md text-white antialiased font-sans`}>{nav[0]}</Link>
-          ))
-        }
+
+        <div className='w-full flex flex-col gap-3 pt-3'>
+          { 
+            navs && navs.map( (nav, item) => (
+              <LessonLink to={nav[1]} key={item} >{nav[0]}</LessonLink>
+            ))
+          }
+        </div>
+
         <div className={`w-full h-full flex justify-center items-end`}>
           <div
             className={`w-full 
