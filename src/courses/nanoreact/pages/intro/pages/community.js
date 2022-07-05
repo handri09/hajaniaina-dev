@@ -2,7 +2,7 @@ import React from 'react';
 import { CourseContent } from '../../../../templates';
 import src from '../../../../assests/reactjs/01.intro/project01.png';
 
-function What() {
+function Community() {
   return (
     <>
       <CourseContent
@@ -31,4 +31,4 @@ function What() {
   );
 }
 
-export default What;
+export default Community;

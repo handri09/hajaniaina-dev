@@ -1,8 +1,7 @@
 import React from 'react';
 import { CourseContent } from '../../../../templates';
-import src from '../../../../assests/reactjs/01.intro/project01.png';
 
-function What() {
+function Strategy() {
   return (
     <>
       <CourseContent
@@ -16,19 +15,11 @@ function What() {
         ]}
 
         data={[
-          ['title', 'What?'], 
-          ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
-          An welcoming word. Everything can come here, so lets be patient.`], 
-          ['code', 'Final code'], 
-          ['pic', src],
-          ['p', 'Mifarana atreto eh'],
-          ['video', 'https://www.youtube.com/embed/1bpLCkabaAg'],
-          ['p', 'Tongasoa Rajo'],
-          ['title', 'Titre ty'], 
+          ['title', 'Strategy'], 
         ]}
       />
     </>
   );
 }
 
-export default What;
+export default Strategy;

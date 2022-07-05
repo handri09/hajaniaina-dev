@@ -18,7 +18,7 @@ function Intro() {
         data={[
           ['title', 'Introduction'], 
           ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
-          An welcoming word. Everything can come here, so lets be patient.`], 
+           An welcoming word. Everything can come here, so lets be patient.`], 
           ['code', 'Final code'], 
           ['pic', src],
           ['p', 'Mifarana atreto eh'],

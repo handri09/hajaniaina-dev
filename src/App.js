@@ -3,8 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import { Editors, NavBar, NavClassRoom } from './components';
 import { Home, Classroom, Learn, NoMatch } from './pages';
 import { NanoReact } from './courses';
-import { Intro, Tongasoa, What } from './courses/nanoreact/pages'
 import { NavPan } from './courses/templates/coursecontent/components';
+import { 
+    Intro, What, Strategy,
+    Mindset, Community, Community2
+  } from './courses/nanoreact/pages';
 
 function App() {
   return (
@@ -22,10 +25,10 @@ function App() {
           <Route path='intro' element={<NavPan />} >
             <Route index element={<Intro />} />
             <Route path='what' element={<What />} />
-            <Route path='strategy' element={<Classroom />} />
-            <Route path='mindset' element={<Classroom />} />
-            <Route path='community' element={<Classroom />} />
-            <Route path='community2' element={<Classroom />} />
+            <Route path='strategy' element={<Strategy />} />
+            <Route path='mindset' element={<Mindset />} />
+            <Route path='community' element={<Community />} />
+            <Route path='community2' element={<Community2 />} />
           </Route>
         </Route>
       </Routes>
