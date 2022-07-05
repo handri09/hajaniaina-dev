@@ -16,16 +16,16 @@ function Intro() {
         ]}
 
         data={[
-          ['title', 'Introduction'], 
-          ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
-           An welcoming word. Everything can come here, so lets be patient.`], 
-          ['code', 'Final code'], 
-          ['pic', src],
-          ['p', 'Mifarana atreto eh'],
+          ['title', "Tongasoa eto amin'ny Program React"], 
           ['video', 'https://www.youtube.com/embed/1bpLCkabaAg'],
-          ['p', 'Tongasoa Rajo'],
-          ['title', 'Titre ty'], 
         ]}
+
+        links = {{
+            prev: '/hajaniaina-dev/nanoreact',
+            next: '/hajaniaina-dev/nanoreact/intro/what'
+          }
+        }
+        
       />
     </>
   );

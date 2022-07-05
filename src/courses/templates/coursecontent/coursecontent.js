@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavPan, Headers, CourseBody } from './components';
 
-function CourseContent({ navs, data }) {
+function CourseContent({ navs, data, links }) {
   const [open, setOpen] = React.useState(true);
   const onOpen = () => { 
     setOpen(prev => !prev)
@@ -21,6 +21,7 @@ function CourseContent({ navs, data }) {
           <Headers open={open} onOpen={() => onOpen()} />
           <CourseBody 
             data={data}
+            links={links}
           />
         </div>
       </div>
