@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function CourseBody({ data, links }) {
   return (
-  <div className={`w-full max-w-screen-md flex flex-col gap-5`}>
+  <div className={`w-full max-w-screen-md flex flex-col gap-3`}>
 
     {
       data.map( (d, item) => (
@@ -35,27 +35,40 @@ const Content = ({ data }) => {
 
   if (data[0] === 'video')
   return (<Video data={data[1]} />);
+  
+  if (data[0] === 'list')
+  return (<List data={data[1]} />);
 }
 
 const Title = ({ data }) => (
-  <div className={`w-full border-b-2 border-sky-700 text-2xl py-3`}>
+  <div className={`w-full border-b-2 border-sky-700 text-2xl py-3 my-2`}>
     <p className={`text-gray-500 font-sans font-light`}>{data}</p>
   </div>
 );
 
 const Title2 = ({ data }) => (
-  <div className={`w-full text-xl py-1`}>
+  <div className={`w-full text-xl py-1 my-1`}>
     <p className={`text-gray-700 font-sans font-semibold`}>{data}</p>
   </div>
 );
 
 const P = ({ data }) => (<p>{data}</p>);
 const Code = ({ data }) => (<p className={`font-mono`}>{ data }</p>);
-const PIC = ({ data }) => (<img src={data} alt={'test'} />);
+const PIC = ({ data }) => (<img src={data} alt={'test'} className='my-5' />);
 const Video = ({ data }) => (
-  <iframe width="420" height="350" src={`${data}?modestbranding=1&?showinfo=0&iv_load_policy=1&iv_load_policy=1`} className='w-full'>
+  <iframe width="420" height="350" src={`${data}?modestbranding=1&?showinfo=0&iv_load_policy=1&iv_load_policy=1`} className='w-full my-2'>
   </iframe>
 );
+const List = ({ data }) => (
+  <ul className='pl-5'>
+    { 
+      data.map( (d, item) => (
+        <li key={item} className=''>{ d }</li>
+        )
+      ) 
+    }
+  </ul>
+  )
 
 // iv_load_policy=1&controls=0&modestbranding=1&showinfo=0
 
