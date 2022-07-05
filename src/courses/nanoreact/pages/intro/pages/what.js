@@ -16,16 +16,22 @@ function What() {
         ]}
 
         data={[
-          ['title', 'What?'], 
+          ['title', 'Ireo Project Hoataonao'], 
+          ['video', 'https://www.youtube.com/embed/tgbNymZ7vqY'],
           ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
           An welcoming word. Everything can come here, so lets be patient.`], 
+          ['title2', 'Project: NyBokiko (React Fundamentals)'], 
           ['code', 'Final code'], 
           ['pic', src],
           ['p', 'Mifarana atreto eh'],
-          ['video', 'https://www.youtube.com/embed/1bpLCkabaAg'],
           ['p', 'Tongasoa Rajo'],
           ['title', 'Titre ty'], 
         ]}
+        links = {{
+            prev: '/hajaniaina-dev/nanoreact/intro',
+            next: '/hajaniaina-dev/nanoreact/intro/strategy'
+          }
+        }
       />
     </>
   );

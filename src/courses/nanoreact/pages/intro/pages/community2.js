@@ -16,9 +16,9 @@ function Community2() {
         ]}
 
         data={[
-          ['title', 'What?'], 
+          ['title', 'Community2'], 
           ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
-          An welcoming word. Everything can come here, so lets be patient.`], 
+            An welcoming word. Everything can come here, so lets be patient.`], 
           ['code', 'Final code'], 
           ['pic', src],
           ['p', 'Mifarana atreto eh'],
@@ -26,6 +26,11 @@ function Community2() {
           ['p', 'Tongasoa Rajo'],
           ['title', 'Titre ty'], 
         ]}
+        links = {{
+            prev: '/hajaniaina-dev/nanoreact/intro/community',
+            next: '/hajaniaina-dev/nanoreact/intro/community2'
+          }
+        }
       />
     </>
   );

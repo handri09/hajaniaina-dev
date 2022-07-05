@@ -18,7 +18,12 @@ const pages = {
       ['video', 'https://www.youtube.com/embed/1bpLCkabaAg'],
       ['p', 'Tongasoa Rajo'],
       ['title', 'Titre ty']
-    ]
+    ],
+    links: {
+        prev: '/hajaniaina-dev/nanoreact/intro',
+        next: '/hajaniaina-dev/nanoreact/intro/strategy'
+      
+    }
   },
   what : {
     navs: [
@@ -39,6 +44,11 @@ const pages = {
       ['video', 'https://www.youtube.com/embed/1bpLCkabaAg'],
       ['p', 'Tongasoa Rajo'],
       ['title', 'Titre ty']
-    ]
+    ],
+    links: {
+      prev: '/hajaniaina-dev/nanoreact/intro',
+      next: '/hajaniaina-dev/nanoreact/intro/strategy'
+    
+    }
   }
 }

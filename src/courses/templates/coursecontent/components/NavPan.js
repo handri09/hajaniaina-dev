@@ -7,13 +7,13 @@ function NavPan({ open, navs }) {
       <div
         className={`
           ${ open ? '' : 'hidden' }
-          w-72 h-full bg-violet-900 
+          w-72 h-full bg-sky-900 
           pt-12 flex flex-col
         `}>
         <div
           className={`
             text-gray-50 font-bold text-sm 
-            tracking-widest pl-3 bg-violet-600
+            tracking-widest pl-3 bg-sky-700
             py-3 pt-4
           `}>
           <p className=''>CONCEPTS</p>
@@ -27,7 +27,7 @@ function NavPan({ open, navs }) {
           <div
             className={`w-full 
               text-gray-50 font-bold text-sm 
-              tracking-widest pl-3 bg-violet-600
+              tracking-widest pl-3 bg-sky-700
               py-3
             `}>
             <p className='w-full'>RESOURCES</p>

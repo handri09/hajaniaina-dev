@@ -17,6 +17,12 @@ function Strategy() {
         data={[
           ['title', 'Strategy'], 
         ]}
+
+        links = {{
+            prev: '/hajaniaina-dev/nanoreact/intro/what',
+            next: '/hajaniaina-dev/nanoreact/intro/mindset'
+          }
+        }
       />
     </>
   );

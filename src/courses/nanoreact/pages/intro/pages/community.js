@@ -16,7 +16,7 @@ function Community() {
         ]}
 
         data={[
-          ['title', 'What?'], 
+          ['title', 'Community'], 
           ['p', `An welcoming word. Everything can come here, so lets be patient.An welcoming word. Everything can come here, so lets be patient. 
           An welcoming word. Everything can come here, so lets be patient.`], 
           ['code', 'Final code'], 
@@ -26,6 +26,11 @@ function Community() {
           ['p', 'Tongasoa Rajo'],
           ['title', 'Titre ty'], 
         ]}
+        links = {{
+            prev: '/hajaniaina-dev/nanoreact/intro/mindset',
+            next: '/hajaniaina-dev/nanoreact/intro/community2'
+          }
+        }
       />
     </>
   );
