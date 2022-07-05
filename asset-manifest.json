@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/hajaniaina-dev/static/css/main.f36c540f.css",
-    "main.js": "/hajaniaina-dev/static/js/main.50267846.js",
+    "main.css": "/hajaniaina-dev/static/css/main.2cc85334.css",
+    "main.js": "/hajaniaina-dev/static/js/main.9f9d9f72.js",
     "static/js/787.2f4fe072.chunk.js": "/hajaniaina-dev/static/js/787.2f4fe072.chunk.js",
     "static/media/ds.png": "/hajaniaina-dev/static/media/ds.0554449daeb9c765652a.png",
     "static/media/project01.png": "/hajaniaina-dev/static/media/project01.61b37003ee5796bcda10.png",
+    "static/media/project02WYR.png": "/hajaniaina-dev/static/media/project02WYR.68395b067fac3739c8df.png",
     "static/media/logo.png": "/hajaniaina-dev/static/media/logo.0d5f5bd307165e87f8b4.png",
     "static/media/open.png": "/hajaniaina-dev/static/media/open.1c4a61a1f00ca3b6925f.png",
     "index.html": "/hajaniaina-dev/index.html",
-    "main.f36c540f.css.map": "/hajaniaina-dev/static/css/main.f36c540f.css.map",
-    "main.50267846.js.map": "/hajaniaina-dev/static/js/main.50267846.js.map",
+    "main.2cc85334.css.map": "/hajaniaina-dev/static/css/main.2cc85334.css.map",
+    "main.9f9d9f72.js.map": "/hajaniaina-dev/static/js/main.9f9d9f72.js.map",
     "787.2f4fe072.chunk.js.map": "/hajaniaina-dev/static/js/787.2f4fe072.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f36c540f.css",
-    "static/js/main.50267846.js"
+    "static/css/main.2cc85334.css",
+    "static/js/main.9f9d9f72.js"
   ]
 }
