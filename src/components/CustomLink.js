@@ -6,6 +6,8 @@ function CustomLink({ children, to, ...props }, ref) {
     path: resolved.pathname,
     end: resolved.pathname.split('/')[1] !== 'solutions'
   });
+  // console.log('Match:', match)
+  // console.log('Resolved:', resolved)
 
   return (
     <div>
@@ -16,18 +18,15 @@ function CustomLink({ children, to, ...props }, ref) {
           mt-2 md:mt-0 md:ml-4 
           bg-transparent 
           hover:text-violet-700 hover:border-b-violet-700 hover:border-b 
-          focus:text-violet-700 focus:border-b-violet-700 focus:border-b 
+          focus:text-violet-700 focus:border-b-violet-700 focus:border-b
           ${
             children === 'Classroom'
               ? 'border border-violet-700 rounded-md hover:bg-violet-700 focus:bg-violet-700 hover:text-white focus:text-white'
               : ''
           }
           ${
-            match
-              ? //'text-violet-700 border-b-violet-700 border-b font-bold '
-                children === 'Classroom'
-                ? 'border font-bold text-white bg-violet-700 rounded-md focus:text-white'
-                : ''
+            match 
+              ? children === 'Classroom' ? `border font-bold text-white bg-violet-700 rounded-md focus:text-white` : `text-violet-700 border-b-violet-700 border-b font-bold`
               : ''
           }
           `}
@@ -35,7 +34,6 @@ function CustomLink({ children, to, ...props }, ref) {
           {...props}>
           {children}
       </Link>
-      {/* {match && " (active)"} */}
     </div>
   );
 }

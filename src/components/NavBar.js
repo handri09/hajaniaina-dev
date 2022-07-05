@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import CustomLink from './CustomLink';
 import logo from '../assets/logo.png'
 
@@ -10,7 +10,7 @@ function NavBar() {
         <div className='w-full max-w-screen-2xl mx-auto flex justify-center items-center px-5'>
           <div className="w-full flex p-1 h-full items-center">
             <img src={logo} alt='logo' className='px-3 h-12 lg:h-14'/>
-            <p className='px-2 text-2xl font-bold text-violet-800'></p>
+            <p className='px-2 text-2xl font-bold text-sky-800'></p>
           </div>
           <div className='flex flex-row gap-1'>
             <CustomLink to=''>Home</CustomLink>
