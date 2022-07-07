@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Editors, NavBar, NavClassRoom } from './components';
 import { Home, Classroom, Learn, NoMatch } from './pages';
-import { NanoReact } from './courses';
+import { NanoReact, NanoMathss } from './courses';
 import { NavPan } from './courses/templates/coursecontent/components';
 import { 
     Intro, What, Strategy,
@@ -20,6 +20,13 @@ function App() {
           <Route path='*' element={<NoMatch />} />
         </Route>
         <Route path='hajaniaina-dev/learn' element={<Learn />} />
+        <Route path='hajaniaina-dev/nanomathss/' element={<NavClassRoom  />}>
+          <Route index element={<NanoMathss />} />
+          
+          {/* <Route path='intro' element={<NavPan />} >
+            <Route index element={<Intro />} />
+          </Route> */}
+        </Route>
         <Route path='hajaniaina-dev/nanoreact/' element={<NavClassRoom />}>
           <Route index element={<NanoReact />} /> 
           <Route path='intro' element={<NavPan />} >
