@@ -1,3 +1,4 @@
-import NanoReact from "./nanoreact/nanoreact";
+import NanoReact from './nanoreact/nanoreact';
+import NanoMathss from './nanomathss/nanomathss';
 
-export { NanoReact };
+export { NanoReact, NanoMathss };
